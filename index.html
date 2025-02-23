@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        .color{
+            background-color: rgb(240, 248, 255);
+        }
+    </style>
+</head>
+<body>
+    <section class="absolute max-w-[434px] flex flex-col gap-5 py-3 px-5 shadow-lg justify-center rounded-xl bottom-10 left-10 bg-white">
+    <h1 class="font-bold text-[2rem]">Random Color Generator</h1>
+    <p>Klik tombol di bawah untuk mendapatkan kombinasi warna acak.</p>
+    <button id="generate" class="bg-[#007AFF] text-white text-[1.25rem] rounded-lg py-3 cursor-pointer">Generate colors</button>
+    <p class="text-sm text-black/50">Web ini dibuat untuk menuntaskan challenge #4 KODEIN Programming Club | Dibuat oleh Abdullah Fulan</p>
+    </section>
+    <main class="flex color-cards">
+        <div class="flex flex-1 items-center justify-center h-[100svh] bg-white color-card">
+            <p class="rounded-md shadow-lg px-2 py-1 bg-white cursor-pointer">RGB(255, 255, 255)</p>
+        </div>
+        <div class="flex flex-1 items-center justify-center h-[100svh] bg-black color-card">
+            <p class="rounded-md shadow-lg px-2 py-1 bg-white cursor-pointer">RGB(0, 0, 0)</p>
+        </div>
+        <div class="flex flex-1 items-center justify-center h-[100svh] bg-white color-card">
+            <p class="rounded-md shadow-lg px-2 py-1 bg-white cursor-pointer">RGB(255, 255, 255)</p>
+        </div>
+        <div class="flex flex-1 items-center justify-center h-[100svh] bg-black color-card">
+            <p class="rounded-md shadow-lg px-2 py-1 bg-white cursor-pointer">RGB(0, 0, 0)</p>
+        </div>
+        <div class="flex flex-1 items-center justify-center h-[100svh] bg-white color-card">
+            <p class="rounded-md shadow-lg px-2 py-1 bg-white cursor-pointer">RGB(255, 255, 255)</p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
